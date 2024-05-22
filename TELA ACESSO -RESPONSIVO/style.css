@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fff;
+}
+
+.logo {
+    width: 252px;
+    height: 143px;
+    position: absolute;
+    left: 26px;
+    top: 44px;
+    object-fit: cover;
+}
+
+.acesso {
+    background: #fff; 
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    width: 432px; 
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    height: auto;
+}
+
+.voltar {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.voltar img {
+    width: 20px;
+    height: auto;
+}
+
+.acessar-conta {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.preencha-dados {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-cpf, .input-senha {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.cpf-ou-cnpj, .input-senha input {
+    width: calc(100% - 40px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-cpf button, .input-senha button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.input-cpf img, .input-senha img {
+    width: 24px; 
+    height: auto;
+}
+
+.embaixo-senha {
+    margin-top: 20px;
+}
+
+.embaixo-senha input {
+    margin-right: 10px;
+    transform: scale(1.5); 
+}
+
+.embaixo-senha label {
+    font-size: 18px;
+    color: #666;
+}
+
+.esqueceu-senha, .cadastre-se {
+    background: none;
+    border: none;
+    color: black; 
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center; 
+    padding: 0;
+    margin-top: 10px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+.esqueceu-senha:hover, .cadastre-se:hover {
+    text-decoration: underline;
+}
+
+.esqueceu-senha p, .cadastre-se p {
+    margin: 0;
+}
+
+.cadastre-se {
+    margin-top: 20px;
+    display: block;
+    text-align: center; 
+}
+
+.lembrar-cpf-label {
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 200px;
+        height: auto;
+        left: 10px;
+        top: 20px;
+    }
+
+    .acesso {
+        width: 90%;
+        padding: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .acessar-conta {
+        font-size: 20px;
+    }
+
+    .preencha-dados {
+        font-size: 13px;
+    }
+
+    .cpf-ou-cnpj, .input-senha input {
+        width: calc(100% - 30px);
+        font-size: 12px;
+    }
+
+    .embaixo-senha label, .lembrar-cpf-label {
+        font-size: 14px;
+    }
+
+    .esqueceu-senha, .cadastre-se {
+        font-size: 16px;
+    }
+}

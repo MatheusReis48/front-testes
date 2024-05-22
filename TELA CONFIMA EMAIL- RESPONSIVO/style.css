@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+img[alt="logo-portofix"] {
+    width: 252px;
+    height: auto;
+    position: absolute;
+    top: 44px;
+    left: 26px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 432px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.txt-codigo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.codigo {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.txt-nao-recebeu {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.reenviar {
+    width: 6.5em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: #1472C9;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 18px; 
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    animation: pulse 2s infinite;
+}
+
+.reenviar:hover {
+    color: #1472C9;
+}
+
+.reenviar:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+.reenviar:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@media (max-width: 600px) {
+    img[alt="logo-portofix"] {
+        width: 200px;
+        top: 20px;
+        left: 10px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .txt-codigo {
+        font-size: 20px;
+    }
+
+    .codigo {
+        font-size: 16px;
+    }
+
+    .txt-nao-recebeu {
+        font-size: 13px;
+    }
+
+    .reenviar {
+        font-size: 14px;
+    }
+}

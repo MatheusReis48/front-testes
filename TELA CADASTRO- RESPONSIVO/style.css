@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+}
+
+img[alt="logo-portofix"] {
+    width: 252px;
+    height: auto;
+    position: absolute;
+    top: 44px;
+    left: 26px;
+}
+
+.retangulo {
+    background: #fff;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 432px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.botao-voltar {
+    background: none;
+    border: none;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.botao-voltar img {
+    width: 20px;
+    height: auto;
+}
+
+.txt-cadastro {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.txt-2 {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    align-self: flex-end;
+}
+
+.submit-button img {
+    width: 24px;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    img[alt="logo-portofix"] {
+        width: 200px;
+        top: 20px;
+        left: 10px;
+    }
+
+    .retangulo {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .txt-cadastro {
+        font-size: 20px;
+    }
+
+    .txt-2 {
+        font-size: 13px;
+    }
+
+    .inputs input {
+        font-size: 12px;
+    }
+
+    .submit-button img {
+        width: 20px;
+    }
+}
